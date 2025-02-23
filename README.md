@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Web Scroll Animations
 
-## Getting Started
+A website I made for fun to practice my animation-skills.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+-   **Parallax Scrolling:** Smooth scroll effect with multiple columns moving in different directions.
+-   **Responsive Design:** Mobile-first approach that works across devices and screen sizes.
+-   **Carousel:** Image carousel that moves as you scroll.
+-   **Glassmorphism Navbar:** Stylish, semi-transparent navbar that stays fixed at the top.
+-   **Footer Section:** A stylish footer with important links, company info, and social media links.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+-   **Frontend:**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    -   React
+    -   Next.js
+    -   Tailwind CSS
+    -   Lenis (smooth scrolling library)
 
-## Learn More
+-   **Other Libraries Used:**
+    -   Motion (for animations)
+    -   Next Image (for optimized images)
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Acknowledgments
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+-   Thanks to the developers of [Lenis](https://github.com/studio-freight/lenis) for their smooth scrolling library.
+-   Special thanks to [Tailwind CSS](https://tailwindcss.com/) for their utility-first CSS framework.
+-   Inspiration and code snippets from various open-source projects and developers.
