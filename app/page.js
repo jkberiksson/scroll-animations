@@ -8,6 +8,7 @@ import Carousel from './components/Carousel';
 import Parallax from './components/Parallax';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Zoom from './components/Zoom';
 
 export default function Home() {
     useEffect(() => {
@@ -22,12 +23,14 @@ export default function Home() {
     }, []);
 
     return (
-        <div className='overflow-x-hidden'>
+        <div>
             <Navbar />
-            <Header />
-            <Description />
-            <Carousel />
-            <div className='h-screen bg-black flex items-center justify-center text-white'>Some more info</div>
+            <div className='overflow-hidden'>
+                <Header />
+                <Description />
+                <Carousel />
+            </div>
+            <Zoom />
             <Parallax />
             <Footer />
         </div>

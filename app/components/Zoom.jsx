@@ -1,0 +1,24 @@
+import Image from 'next/image';
+import { motion, useScroll, useTransform } from 'motion/react';
+import { useRef } from 'react';
+
+export default function Zoom() {
+    const ref = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: ref,
+        offset: ['start start', 'end end'],
+    });
+
+    const height = useTransform(scrollYProgress, [0, 1], ['40vh', '100vh']);
+    const width = useTransform(scrollYProgress, [0, 1], ['40vw', '100vw']);
+
+    return (
+        <div ref={ref} className='h-[200vh] text-white relative'>
+            <div className='h-screen w-full sticky top-0 flex items-center justify-center text-black'>
+                <motion.div className='h-[40vh] w-[40vw] relative' style={{ height, width }}>
+                    <Image src='/images/11.jpg' fill alt='Zoom' className='object-cover' />
+                </motion.div>
+            </div>
+        </div>
+    );
+}
