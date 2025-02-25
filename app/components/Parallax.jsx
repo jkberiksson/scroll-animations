@@ -26,7 +26,7 @@ export default function Parallax() {
 
     // Adjusting the values so that the first column moves up and second down, and so on
     const y1 = useTransform(scrollYProgress, [0, 1], [0, 1000]); // First column moves up
-    const y2 = useTransform(scrollYProgress, [0, 1], [0, 2000]); // Second column moves down
+    const y2 = useTransform(scrollYProgress, [0, 1], [500, 1000]); // Second column moves down
     const y3 = useTransform(scrollYProgress, [0, 1], [0, 1200]); // Third column moves up
     const y4 = useTransform(scrollYProgress, [0, 1], [0, 2000]); // Fourth column moves down
 
