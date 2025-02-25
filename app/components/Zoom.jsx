@@ -26,7 +26,7 @@ export default function Zoom() {
                     </motion.h1>
                 </div>
 
-                <motion.div className='h-[40dvh] w-[40dvw] relative' style={{ height, width }}>
+                <motion.div className='h-[40vh] w-[40vw] relative' style={{ height, width }}>
                     <Image src='/images/11.jpg' fill alt='Zoom' className='object-cover' />
                 </motion.div>
             </div>
