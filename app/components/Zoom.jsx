@@ -27,13 +27,7 @@ export default function Zoom() {
                 </div>
 
                 <motion.div className='h-[40dvh] w-[40dvw] relative' style={{ height, width }}>
-                    <Image
-                        src='/images/11.jpg'
-                        fill
-                        alt='Zoom'
-                        className='object-cover'
-                        sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-                    />
+                    <Image src='/images/11.jpg' fill alt='Zoom' className='object-cover' />
                 </motion.div>
             </div>
         </div>
