@@ -14,8 +14,8 @@ export default function Header() {
     });
 
     // Parallax transforms
-    const textX = useTransform(scrollYProgress, [0, 1], [-750, -1500]);
-    const imageY = useTransform(scrollYProgress, [0, 1], [0, 300]); // Parallax effect for image
+    const textX = useTransform(scrollYProgress, [0, 1], [-500, -1000]);
+    const imageY = useTransform(scrollYProgress, [0, 1], [0, 500]); // Parallax effect for image
 
     return (
         <header ref={container} className='relative h-[100dvh] w-screen flex items-end overflow-hidden'>
@@ -25,11 +25,11 @@ export default function Header() {
 
             {/* Moving Text */}
             <motion.div style={{ x: textX }} className='flex gap-14'>
-                <p className='text-white text-8xl lg:text-[200px]'>Freelance</p>
-                <p className='text-white text-8xl lg:text-[200px]'>Developer</p>
-                <p className='text-white text-8xl lg:text-[200px]'>-</p>
-                <p className='text-white text-8xl lg:text-[200px]'>Freelance</p>
-                <p className='text-white text-8xl lg:text-[200px]'>Developer</p>
+                <p className='text-white text-7xl lg:text-[200px]'>Freelance</p>
+                <p className='text-white text-7xl lg:text-[200px]'>Developer</p>
+                <p className='text-white text-7xl lg:text-[200px]'>-</p>
+                <p className='text-white text-7xl lg:text-[200px]'>Freelance</p>
+                <p className='text-white text-7xl lg:text-[200px]'>Developer</p>
             </motion.div>
         </header>
     );
