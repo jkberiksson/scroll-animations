@@ -18,7 +18,7 @@ export default function Header() {
     const imageY = useTransform(scrollYProgress, [0, 1], [0, 300]); // Parallax effect for image
 
     return (
-        <header ref={container} className='relative h-screen w-screen flex items-end overflow-hidden'>
+        <header ref={container} className='relative h-[100dvh] w-screen flex items-end overflow-hidden'>
             <motion.div style={{ y: imageY }} className='absolute h-screen w-screen'>
                 <Image src='/images/1.jpg' fill alt='Picture of the author' className='object-cover' />
             </motion.div>

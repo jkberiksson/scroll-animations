@@ -50,14 +50,8 @@ function Column({ images, y, height }) {
             }}>
             {images.map((image, index) => {
                 return (
-                    <div className='bg-red-400 h-full w-full relative rounded-4xl overflow-hidden' key={index}>
-                        <Image
-                            src={image}
-                            alt={`Image ${index}`}
-                            fill
-                            className='object-cover'
-                            sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-                        />
+                    <div className='h-full w-full relative rounded-4xl overflow-hidden' key={index}>
+                        <Image src={image} alt={`Image ${index}`} fill className='object-cover' />
                     </div>
                 );
             })}
